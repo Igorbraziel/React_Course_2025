@@ -1,0 +1,114 @@
+:root {
+    --primary-color-light: #f7f7f7;
+    --primary-color: #e7e7e7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333;
+  }
+
+.steps {
+    width: 600px;
+    background-color: var(--primary-color-light);
+    margin: 100px auto;
+    padding: 5px 70px;
+    border-radius: 8px;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers .active {
+    background-color: #7950f2;
+    color: #fff;
+  }
+
+.numbers > div {
+    background-color: var(--primary-color);
+    aspect-ratio: 1;
+    margin: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    height: 40px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 40px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons > button {
+    border: none;
+    background: var(--primary-color);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons button span {
+    font-size: 16px;
+    line-height: 1;
+  }
+  
+  h3 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 40px;
+    color: inherit;
+  }
+  
+  .close:hover {
+    color: #7950f2;
+  }
+
+.close-button {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 40px
+}
+
+.close-button:hover {
+  color: #7950f2;
+}
